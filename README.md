@@ -137,4 +137,4 @@ Built by Anish (CSE Student)
 
 ## License
 
-MIT
+[MIT](LICENSE)
