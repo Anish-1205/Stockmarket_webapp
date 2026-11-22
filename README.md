@@ -44,7 +44,7 @@ trading-signals-dashboard/
 │   │   ├── layout.jsx
 │   │   └── globals.css
 │   ├── lib/
-│   │   └── api.js (API client)
+│   │   └── api.js (API client, currently missing, see Known issue)
 │   └── package.json
 ├── backend/
 │   ├── strategies/
@@ -53,7 +53,6 @@ trading-signals-dashboard/
 │   │   └── intraday_mean_reversion.py
 │   ├── main.py (FastAPI server)
 │   └── requirements.txt
-├── .gitignore
 └── README.md
 ```
 
@@ -79,6 +78,10 @@ npm run dev
 ```
 
 Frontend runs on `http://localhost:3000`
+
+### Known issue
+
+`frontend/app/page.jsx` imports `frontend/lib/api.js`, but that file is not in this repository. The frontend will not build from a fresh clone until it is restored. The backend is not affected.
 
 ## Usage
 
